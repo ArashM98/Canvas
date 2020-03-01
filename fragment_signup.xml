@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Activity_SignUp_SignIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/signUp_Name" />
+
+    <EditText
+        android:id="@+id/ed_usersName_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/styles_gray_backgrounds" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/signUp_LastName" />
+
+    <EditText
+        android:id="@+id/ed_usersLastName_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/styles_gray_backgrounds" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/login_password" />
+
+    <EditText
+        android:id="@+id/ed_usersPassword_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textPassword"
+        android:background="@drawable/styles_gray_backgrounds" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/signUp_Email" />
+
+    <EditText
+        android:id="@+id/ed_usersEmail_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/styles_gray_backgrounds" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/signUp_phoneNumber" />
+
+    <EditText
+        android:id="@+id/ed_usersPhoneNumber_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="phone"
+        android:background="@drawable/styles_gray_backgrounds" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/signUp_ArtistOrBuyer" />
+
+    <TextView
+        android:id="@+id/ed_usersArtistOrBuyer_SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="chooseArtistOrBuyer"
+        android:background="@drawable/styles_gray_backgrounds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/cancelBtn_signUpFragment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:button_duration="200"
+            android:background="@drawable/styles_button_backgrounds_gray_rounded"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="@string/btn_cancel"
+            app:button_scale="0.9" />
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/okBtn_signUpFragment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_gravity="end"
+            app:button_duration="200"
+            android:background="@drawable/styles_button_backgrounds_gray_rounded"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="@string/btn_ok"
+            app:button_scale="0.9" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

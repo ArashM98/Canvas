@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/styles_gray_backgrounds"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/im_productPic_userArtWork"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/styles_edit_texts"
+            android:elevation="2dp"
+            android:padding="2dp"
+            android:scaleType="fitCenter" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_productName_userArtWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="5dp"
+                    android:layoutDirection="ltr"
+                    android:padding="5dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#000"
+                    android:textColorHint="#535353" />
+
+                <TextView
+                    android:id="@+id/tv_productArtist_userArtWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="5dp"
+                    android:layoutDirection="ltr"
+                    android:padding="5dp"
+                    android:text="@string/tv_productArtist"
+                    android:textAlignment="viewStart"
+                    android:textColor="#000"
+                    android:textColorHint="#535353" />
+
+                <TextView
+                    android:id="@+id/tv_productSize_userArtWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="5dp"
+                    android:layoutDirection="ltr"
+                    android:padding="5dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#000"
+                    android:textColorHint="#535353" />
+
+                <TextView
+                    android:id="@+id/tv_productSeller_userArtWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="5dp"
+                    android:layoutDirection="ltr"
+                    android:padding="5dp"
+                    android:text="@string/tv_productSeller"
+                    android:textAlignment="viewStart"
+                    android:textColor="#000"
+                    android:textColorHint="#535353" />
+
+            </LinearLayout>
+
+            <com.skydoves.elasticviews.ElasticButton
+                android:id="@+id/btn_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/styles_button_backgrounds_gray_rounded"
+                android:drawableTop="@drawable/icon_btn_edit_drawable"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                app:button_duration="200"
+                app:button_scale="0.9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

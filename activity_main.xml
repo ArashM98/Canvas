@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Main">
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:id="@+id/btnAboutUs"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:drawableTop="@drawable/icon_about_us_btn_menu"
+        android:gravity="center"
+        android:onClick="menuButtonsAction"
+        android:tag="btnAboutUs"
+        app:button_duration="200"
+        android:background="@drawable/styles_button_backgrounds_dark_blue_rounded"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:button_scale="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:id="@+id/btnTermOfUse"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:drawableTop="@drawable/icon_term_of_use_btn_menu"
+        android:gravity="center"
+        android:onClick="menuButtonsAction"
+        android:tag="btnTermOfUse"
+        app:button_duration="200"
+        android:background="@drawable/styles_button_backgrounds_dark_blue_rounded"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:button_scale="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:id="@+id/btnSetting"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:drawableTop="@drawable/icon_setting"
+        android:gravity="center"
+        android:onClick="menuButtonsAction"
+        android:tag="btnSetting"
+        app:button_duration="200"
+        android:background="@drawable/styles_button_backgrounds_dark_blue_rounded"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:button_scale="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:id="@+id/btnSecondMenu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:drawableTop="@drawable/icon_arrow_drop_left"
+        android:onClick="openSecondMenu"
+        android:tag="btnSecondMenuOpen"
+        app:button_duration="200"
+        android:background="@drawable/styles_button_backgrounds_dark_blue_rounded"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:button_scale="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:id="@+id/btnAccount"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:drawableTop="@drawable/icon_menu_btns_account"
+        android:gravity="center"
+        android:onClick="menuButtonsAction"
+        android:tag="btnAccount"
+        app:button_duration="200"
+        android:background="@drawable/styles_button_backgrounds_dark_blue_rounded"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:button_scale="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:id="@+id/btnShoppingCart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:drawableTop="@drawable/icon_menu_btns_shopping_cart"
+        android:gravity="center"
+        android:onClick="menuButtonsAction"
+        android:tag="btnShoppingCart"
+        app:button_duration="200"
+        android:background="@drawable/styles_button_backgrounds_dark_blue_rounded"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:button_scale="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:id="@+id/btnOrder"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:drawableTop="@drawable/icon_menu_btns_add"
+        android:gravity="center"
+        android:onClick="menuButtonsAction"
+        android:tag="btnOrder"
+        app:button_duration="200"
+        android:background="@drawable/styles_button_backgrounds_dark_blue_rounded"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:button_scale="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:id="@+id/btnSearch"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:drawableTop="@drawable/icon_menu_btns_search"
+        android:gravity="center"
+        android:onClick="menuButtonsAction"
+        android:tag="btnSearch"
+        app:button_duration="200"
+        android:background="@drawable/styles_button_backgrounds_dark_blue_rounded"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:button_scale="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:id="@+id/btnMenu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:drawableTop="@drawable/icon_arrow_drop_up"
+        android:gravity="center"
+        android:onClick="openMenu"
+        android:tag="@string/btn_menu_main_activity"
+        app:button_duration="200"
+        android:background="@drawable/styles_button_backgrounds_dark_blue_rounded"
+        app:button_scale="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:fadeScrollbars="true"
+                android:orientation="vertical">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/imageSlider_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_activity_banner"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/no_image_billboard" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/styles_gray_backgrounds"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lineDevider_groups"
+                        android:textColor="#323E47"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_Styles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/styles_gray_backgrounds"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="goToPopularArts"
+                        android:text="@string/lineDevider_PopularArts"
+                        android:textColor="#323E47"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_PopularProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_activity_banner"
+                    android:background="@drawable/no_image_billboard" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/styles_gray_backgrounds"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textView_Artists_Activity_Main"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_ArtistProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0"
+        android:text="@string/btnMnu_Account"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/btnAccount"
+        app:layout_constraintTop_toTopOf="@+id/btnAccount" />
+
+    <TextView
+        android:id="@+id/tvShoppingCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0"
+        android:text="@string/btnMnu_shoppingCart"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/btnShoppingCart"
+        app:layout_constraintTop_toTopOf="@+id/btnShoppingCart" />
+
+    <TextView
+        android:id="@+id/tvOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0"
+        android:text="@string/btnMnu_addOrder"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/btnOrder"
+        app:layout_constraintTop_toTopOf="@+id/btnOrder" />
+
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0"
+        android:text="@string/btnMnu_search"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+        app:layout_constraintTop_toTopOf="@+id/btnSearch" />
+
+    <TextView
+        android:id="@+id/tvSecondMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0"
+        android:text="@string/btnMnu_SecondMenu"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+        app:layout_constraintTop_toTopOf="@+id/btnSearch" />
+    <TextView
+        android:id="@+id/tvSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0"
+        android:text="@string/btnMnu_Setting"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+        app:layout_constraintTop_toTopOf="@+id/btnSearch" />
+    <TextView
+        android:id="@+id/tvTermOfUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0"
+        android:text="@string/btnMnu_TermOfUse"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+        app:layout_constraintTop_toTopOf="@+id/btnSearch" />
+    <TextView
+        android:id="@+id/tvAboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0"
+        android:text="@string/btnMnu_AboutUs"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+        app:layout_constraintTop_toTopOf="@+id/btnSearch" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

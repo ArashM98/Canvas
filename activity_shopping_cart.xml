@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_Shopping_cart">
+
+    <ListView
+        android:id="@+id/listView_shopping_cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/styles_edit_texts"
+        android:elevation="5dp"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/textView_totalPrice"
+            android:layout_marginStart="10dp"
+            android:textColor="#383838"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_totalPriceNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_marginEnd="10dp"
+            android:text="@string/textView_totalPrice"
+            android:textColor="#383838"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:button_duration="200"
+        android:text="@string/btn_finishOrder"
+        android:background="@drawable/styles_button_backgrounds_gray_rectangular_rounded"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:button_scale="0.9"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:onClick="finishOrder"/>
+
+</LinearLayout>

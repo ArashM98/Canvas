@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="110dp"
+    android:background="@drawable/styles_gray_backgrounds"
+    android:orientation="vertical"
+    tools:context=".Dialog_camera_or_gallery_layout">
+
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="fromGallery"
+        android:text="@string/btn_option_menu_from_gallery"
+        android:background="@drawable/styles_button_backgrounds_dark_gray_rectangular_rounded"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:button_duration="200"
+        app:button_scale="0.9" />
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/styles_button_backgrounds_dark_gray_rectangular_rounded"
+        android:gravity="center"
+        android:onClick="fromCamera"
+        android:text="@string/btn_option_menu_from_camera"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:button_duration="200"
+        app:button_scale="0.9" />
+
+
+</LinearLayout>

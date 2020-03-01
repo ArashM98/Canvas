@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:layoutDirection="ltr"
+                android:text="@string/SettingActivity_SelectLanguage"
+                android:textAlignment="viewStart"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <com.skydoves.elasticviews.ElasticButton
+                android:id="@+id/btn_selectLanguage_settingActivity"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/styles_button_backgrounds_gray_rectangular_rounded"
+                android:gravity="center"
+                android:onClick="selectLanguage"
+                android:text="@string/listOfLanguages_EN"
+                android:textColor="#000"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                app:button_duration="200"
+                app:button_scale="0.9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:layoutDirection="ltr"
+                android:text="@string/SettingActivity_SelectCountry"
+                android:textAlignment="viewStart"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <com.skydoves.elasticviews.ElasticButton
+                android:id="@+id/btn_selectCountry_settingActivity"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/styles_button_backgrounds_gray_rectangular_rounded"
+                android:gravity="center"
+                android:onClick="selectCountry"
+                android:text="@string/listOfCountries_Iran"
+                android:textColor="#000"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                app:button_duration="200"
+                app:button_scale="0.9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="end">
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/btn_ok_ActivityAccount"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/styles_button_dark_gray_background"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:onClick="okButton"
+            android:text="@string/btn_ok"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:button_duration="200"
+            app:button_scale="0.9" />
+
+    </LinearLayout>
+
+</LinearLayout>

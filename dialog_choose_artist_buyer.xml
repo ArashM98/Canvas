@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="110dp"
+    tools:context=".Dialog_choose_artist_buyer"
+    android:orientation="vertical"
+    android:background="@drawable/styles_gray_backgrounds">
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        app:button_duration="200"
+        android:background="@drawable/styles_button_backgrounds_gray_rectangular_rounded"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="@string/signUp_Dialog_IAMArtist"
+        app:button_scale="0.9"
+        android:tag="artist"
+        android:onClick="chooseArtistOrBuyerDialog"
+        android:layout_marginBottom="5dp"/>
+
+    <com.skydoves.elasticviews.ElasticButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        app:button_duration="200"
+        android:background="@drawable/styles_button_backgrounds_gray_rectangular_rounded"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="@string/signUp_Dialog_IAMBuyer"
+        app:button_scale="0.9"
+        android:tag="buyer"
+        android:onClick="chooseArtistOrBuyerDialog"/>
+
+</LinearLayout>

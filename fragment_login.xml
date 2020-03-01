@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_SignUp_SignIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/Login_email_number" />
+
+        <EditText
+            android:id="@+id/ed_Email_Number_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/styles_gray_backgrounds"
+            android:elevation="5dp"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/login_password" />
+
+        <EditText
+            android:id="@+id/ed_password_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/styles_gray_backgrounds"
+            android:elevation="5dp"
+            android:inputType="textPassword"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/tv_ForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ForgetPassword"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textColor="#0B1341" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/cancelBtn_signInFragment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            app:button_duration="200"
+            android:background="@drawable/styles_button_backgrounds_gray_rounded"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="@string/btn_cancel"
+            app:button_scale="0.9" />
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/okBtn_signInFragment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            app:button_duration="200"
+            android:background="@drawable/styles_button_backgrounds_gray_rounded"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="@string/btn_ok"
+            app:button_scale="0.9" />
+    </LinearLayout>
+
+
+</LinearLayout>

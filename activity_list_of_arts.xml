@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_ListOfArts">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/styles_button_backgrounds_gray_rounded"
+            android:onClick="searchBTN"
+            android:drawableTop="@drawable/icon_btn_search_search_activity"
+            android:elevation="5dp"
+            android:padding="5dp"
+            app:button_duration="200"
+            app:button_scale="0.9" />
+
+        <EditText
+            android:id="@+id/ed_search_Activity_ListOfArts"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/styles_edit_texts"
+            android:elevation="5dp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:onClick="selectFilters"
+            android:background="@drawable/styles_button_backgrounds_gray_rectangular_rounded"
+            app:button_duration="200"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="@string/btn_filters_ListOfArts_activity"
+            android:elevation="5dp"
+            android:padding="5dp"
+            app:button_scale="0.9" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listOfArts_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:elevation="5dp"
+        android:paddingBottom="5dp" />
+
+
+</LinearLayout>

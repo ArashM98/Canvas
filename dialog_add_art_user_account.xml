@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginEnd="50dp"
+    android:layout_marginBottom="100dp"
+    android:background="@drawable/styles_gray_backgrounds"
+    android:orientation="vertical"
+    tools:context=".Activity_Account">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.skydoves.elasticviews.ElasticImageView
+                android:id="@+id/im_addArt_ArtPic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/styles_white_backgrounds"
+                android:elevation="2dp"
+                android:onClick="chooseArtPic"
+                android:padding="2dp"
+                android:src="@drawable/no_image_billboard"
+                app:imageView_duration="200"
+                android:scaleType="fitCenter"
+                app:imageView_scale="0.9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/tv_ArtName"
+                android:textColor="#303030" />
+
+            <EditText
+                android:id="@+id/ed_addArt_ArtsName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/styles_white_backgrounds"
+                android:elevation="2dp"
+                android:padding="2dp"
+                android:textColor="#303030" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/tv_ArtArtist"
+                android:textColor="#303030" />
+
+            <EditText
+                android:id="@+id/ed_addArt_ArtArtist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/styles_white_backgrounds"
+                android:elevation="2dp"
+                android:padding="2dp"
+                android:textColor="#303030" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/tv_ArtSize"
+                android:textColor="#303030" />
+
+            <Spinner
+                android:id="@+id/sp_addArtDialog_ArtsSize"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/styles_white_backgrounds"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:elevation="2dp"
+                android:padding="2dp"
+                android:textColor="#303030"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/tv_ArtStyle"
+                android:textColor="#303030" />
+
+            <Spinner
+                android:id="@+id/sp_addArtDialog_ArtsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/styles_white_backgrounds"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:elevation="2dp"
+                android:padding="2dp"
+                android:textColor="#303030"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/tv_ArtCountry"
+                android:textColor="#303030" />
+
+            <Spinner
+                android:id="@+id/sp_addArtDialgo_ArtsCountry"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/styles_white_backgrounds"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:elevation="2dp"
+                android:padding="2dp"
+                android:textColor="#303030"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <com.skydoves.elasticviews.ElasticButton
+                android:id="@+id/cancelBtn_addArt"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/styles_button_dark_gray_background"
+                android:drawableStart="@drawable/icon_cancel"
+                android:gravity="center"
+                android:onClick="okCancelBtn_addArt_AccountActivity"
+                app:button_duration="200"
+                app:button_scale="0.9" />
+
+            <com.skydoves.elasticviews.ElasticButton
+                android:id="@+id/okBtn_addArt"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/styles_button_dark_gray_background"
+                android:drawableStart="@drawable/icon_done"
+                android:gravity="center"
+                android:onClick="okCancelBtn_addArt_AccountActivity"
+                app:button_duration="200"
+                app:button_scale="0.9" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
